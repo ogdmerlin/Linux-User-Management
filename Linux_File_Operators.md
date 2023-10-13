@@ -1,4 +1,4 @@
-`# Basic File Operators In Bash Scripting`
+**_`# Basic File Operators In Bash Scripting`_**
 
 `-a`, --access: Checks if the file exists and is accessible.
 
@@ -34,4 +34,24 @@
 
     if [ -d mydirectory ]; then
       echo "mydirectory exists and is a directory"
+    fi
+
+#
+
+`-e`, --exists: Checks if the file exists.
+
+    if [ -e myfile.txt ]; then
+      echo "myfile.txt exists"
+    else
+      echo "myfile.txt does not exist."
+    fi
+
+#
+
+`-f`, --regular: Checks if the file is a regular file.
+
+    if [[ -f my_file ]]; then
+        echo "The file my_file is a regular file."
+    else
+        echo "The file my_file is not a regular file."
     fi

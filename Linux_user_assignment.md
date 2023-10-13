@@ -1,6 +1,6 @@
-# ALTSCHOOL(CLOUD ENGINEERING)
+**# ALTSCHOOL(CLOUD ENGINEERING)**
 
-# Linux User/Group Assignment:
+**Linux User/Group Assignment:**
 
 ### Step 1: Create a user in your name:
 
