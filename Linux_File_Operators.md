@@ -55,3 +55,41 @@
     else
         echo "The file my_file is not a regular file."
     fi
+
+#
+
+`-g`, --group-writable: Checks if the file is writable by the group.
+
+    if [[ -g my_file ]]; then
+        echo "The file my_file is writable by the group."
+    else
+        echo "The file my_file is not writable by the group."
+    fi
+
+#
+
+`-k`, --sticky: Checks if the file has the sticky bit set.
+
+    if [[ -k my_file ]]; then
+        echo "The file my_file has the sticky bit set."
+    else
+        echo "The file my_file does not have the sticky bit set."
+    fi
+
+#
+
+`-h` AND `-L`: Checks if the given file is a symbolic link.
+
+    if [ -h /path/to/file ]; then
+        echo "$(readlink /path/to/file)"
+    fi
+
+`-L`: Also Checks if the given file is a symbolic link.(same as `-h`)
+
+    if [[ -L my_link ]]; then
+        echo "The file my_link is a symbolic link."
+    else
+        echo "The file my_link is not a symbolic link."
+    fi
+
+#
